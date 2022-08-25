@@ -1,0 +1,240 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body, input, button {
+  font-family: 'Open Sans', sans-serif;
+}
+
+input, button {
+  font-size: 16px;
+}
+
+.head_bar {
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2a9d8f;
+  color: white;
+}
+
+main {
+  max-width: 800px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.shadow {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px !important;
+}
+
+.input_section {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  border-radius: 10px;
+}
+
+.edit_section, .remove_section, .alert_section {
+  padding: 16px;
+  margin: auto;
+  border-radius: 10px;
+  background-color: white !important;
+  width: 40%;
+}
+
+.dialog {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.input_section > h2, 
+.edit_section > h2 {
+  text-align: center;
+  color: #2a9d8f;
+}
+
+.input_section > form > .input, 
+.edit_section > form > .input {
+  margin: 8px 0;
+}
+
+.input_section > form > button {
+  background-color: #2a9d8f;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.edit_section > form > .edit_action,
+.remove_section > .remove_action, 
+.alert_section > .alert_action  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.edit_section > form > .edit_action > button, 
+.remove_section > .remove_action > button, 
+.alert_section > .alert_action > button {
+  border: 0;
+  padding: 8px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 20%;
+}
+
+.edit_section > form > .edit_action > #editSubmit, 
+.remove_section > .remove_action > #removeSubmit, 
+.alert_section > .alert_action > #alertOk {
+  background-color: #2a9d8f;
+  color: white;
+}
+
+.edit_section > form > .edit_action > #editCancel, 
+.remove_section > .remove_action > #removeCancel  {
+  background-color: #e76f51;
+  color: white;
+}
+
+.input_section > form > button > span {
+  font-weight: bold;
+}
+
+.input_section > form > .input > input, 
+.edit_section > form > .input > input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+
+.input_section > form > .input > label, 
+.edit_section > form > .input > label {
+  color: #2a9d8f;
+  font-weight: bold;
+}
+
+.input_section > form > .input_inline {
+  margin: 12px 0;
+  display: flex;
+  align-items: center;
+}
+
+.input_section > form > .input_inline > label {
+  color: #2a9d8f;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.search_section {
+  margin: 16px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  border-radius: 10px;
+}
+
+.search_section > h2 {
+  color: #2a9d8f;
+}
+
+.search_section > form {
+  padding: 16px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr 0.3fr 0.3fr;
+  grid-gap: 10px;
+}
+
+.search_section > form > label {
+  display: flex;
+  align-items: center;
+}
+
+.search_section > form > input {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.search_section > form > button {
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search_section > form > #searchSubmit {
+  background-color: #2a9d8f;
+  color: white;
+}
+
+.search_section > form > #searchClear {
+  background-color: #e76f51;
+  color: white;
+}
+
+.book_shelf {
+  margin: 16px 0 0 0;
+  padding: 16px;
+  border-radius: 10px;
+}
+
+.book_shelf > h2 {
+  color: #2a9d8f;
+}
+
+.book_shelf > .book_list {
+  padding: 16px;
+}
+
+.book_shelf > .book_list > .book_item {
+  padding: 8px 16px 16px 16px;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.book_shelf > .book_list > .book_item > h3, p {
+  margin: 8px 0;
+}
+
+.book_shelf > .book_list > .book_item > .action > button {
+  border: 0;
+  padding: 5px;
+  margin: 0 5px 0 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.book_shelf > .book_list > .book_item > .action > .green {
+  background-color: darkgreen;
+  color: white;
+}
+
+.book_shelf > .book_list > .book_item > .action > .red {
+  background-color: darkred;
+  color: white;
+}
+
+.book_shelf > .book_list > .book_item > .action > .blue {
+  background-color: blue;
+  color: white;
+}
